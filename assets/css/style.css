@@ -1,13 +1,17 @@
 :root {
     --bkco: teal;
+    --bord: 2px solid floralwhite;
     
 }
 
+/* Nav Bar CSS */
 .customNav {
     position: fixed;
     width: 100%;
-    background-color: var(--bkco);
+    background-color: #272727;
     z-index: 10;
+    border-left: var(--bord);
+    border-right: var(--bord);
 }
 
 .customNav a {
@@ -24,8 +28,58 @@
     width: 100px;
 }
 
+/* nav bar links moved to right*/
 .nav-item {
     margin: 0px 15px;
     text-decoration: none;    
 }
 
+/*Jumbrotron CSS*/
+
+.jumbotron {
+    background-image: url("../images/jumbotron\ bg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(50vh -15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: var(--bord);
+    border-right: var(--bord);
+}
+
+.jtcopy {
+    margin: 100px ;
+    width: 70%;
+    min-width: 500px;
+    max-width: 700px;
+    color: floralwhite;
+    text-align: center;
+}
+
+.display-picture {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.display-picture img {
+    border: 5px solid floralwhite;
+    border-radius: 10px;
+}
+
+.divider-line {
+    background-color: floralwhite;
+    height:3px;
+    margin: 50px;
+}
+
+.lead {
+    font-size: 25px;
+    
+}
+
+.jttext{
+    font-size: 20px;
+}

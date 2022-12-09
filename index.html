@@ -13,10 +13,11 @@
 
 
 <body id="page-top">
+    <!--Navigation bar start-->
     <!--added NavBar component from Bootstrap-->
     <!--added customNav class to edit nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light customNav">
-        <a class="navbar-brand" href="#"><img src="../Bootstrap-Portfolio/assets/images/NavbarLogo2.png">Noel Galvin Portfolio</a>
+        <a class="navbar-brand" href="#"><img src="../Bootstrap-Portfolio/assets/images/NavbarLogo2.png" alt="portfolio logo">Noel Galvin Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,19 +25,40 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">My Work</a>
+              <a class="nav-link" id="#my-work">My Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
+              <a class="nav-link" id="#skills">Skills</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" id="#about-me">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Me</a>
+                <a class="nav-link" id="#contact-me">Contact Me</a>
               </li> 
           </ul>
         </div>
       </nav>
+      <!--Navigation bar end-->
+
+      <header>
+      <!--Jumbotron start-->
+      <!--added Jumbotron component from Bootstrap-->
+      <div class="jumbotron">
+        <!--added new div class for display picture-->
+        <div class="jtcopy">
+        <div class="display-picture"><img src="../Bootstrap-Portfolio/assets/images/profilepicture2.jpg" alt="noel galvin profile picture"></div>
+        <h1 class="display-4">Noel Galvin</h1>
+        <div class="divider-custom">
+            <div class="divider-line"></div>
+        </div>
+        <p class="lead"><strong>Front-End Web Developer</strong></p>
+        <p class="jttext">Follow me on my web development journey</p>
+        <a class="btn btn-dark btn-sm" id="#about-me" role="button">About Me</a>
+    
+    </div>
+      </div>
+    </header>
+
 </body>
 </html>
