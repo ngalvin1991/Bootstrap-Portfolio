@@ -1,14 +1,19 @@
 :root {
-    --bkco: teal;
+    --bkco: #272727;
     --bord: 2px solid floralwhite;
     
+}
+
+.container {
+    display: flex;
+    width: 100%;
 }
 
 /* Nav Bar CSS */
 .customNav {
     position: fixed;
     width: 100%;
-    background-color: #272727;
+    background-color: #27272781 !important;
     z-index: 10;
     border-left: var(--bord);
     border-right: var(--bord);
@@ -32,6 +37,10 @@
 .nav-item {
     margin: 0px 15px;
     text-decoration: none;    
+}
+
+a:hover {
+    background-color: rgb(181, 136, 226, 0.2);
 }
 
 /*Jumbrotron CSS*/
@@ -82,4 +91,37 @@
 
 .jttext{
     font-size: 20px;
+}
+
+.heading {
+    text-align: center;
+    color: floralwhite!important;
+    padding-bottom: 10px;
+    font-size: 50px;
+
+}
+
+.container-fluid {
+    background-color: var(--bkco);
+    margin-top: auto;    
+
+}
+
+.cardContainer {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+
+.card-img-top{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+}
+
+.btn {
+    margin-bottom: auto;
 }
