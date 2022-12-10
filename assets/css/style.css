@@ -1,6 +1,7 @@
 :root {
     --bkco: #272727;
     --bord: 2px solid floralwhite;
+    --shdw: rgb(238, 42, 238);
     
 }
 
@@ -39,9 +40,16 @@
     text-decoration: none;    
 }
 
-a:hover {
-    background-color: rgb(181, 136, 226, 0.2);
-}
+.nav-item a {
+    box-shadow: inset 0 0 0px 0px rgba(238, 42, 238, 0.452);
+    color: var(--shdw);
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  .nav-item a:hover {
+    box-shadow: inset 100px 0 0 0 rgba(238, 42, 238, 0.452);
+    color: white;
+  }
 
 /*Jumbrotron CSS*/
 
@@ -78,10 +86,14 @@ a:hover {
     border-radius: 10px;
 }
 
+h1 {
+    margin-top: 20px;
+}
+
 .divider-line {
     background-color: floralwhite;
     height:3px;
-    margin: 50px;
+    margin: 25px;
 }
 
 .lead {
@@ -93,35 +105,76 @@ a:hover {
     font-size: 20px;
 }
 
+/* project section cards*/
+
 .heading {
     text-align: center;
-    color: floralwhite!important;
     padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 50px;
     font-size: 50px;
-
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(238, 42, 238, 0.322);
+    color: floralwhite;
 }
 
 .container-fluid {
     background-color: var(--bkco);
-    margin-top: auto;    
+    margin-top: auto; 
+    justify-content: center !important;   
+    align-items: center !important;
+    border-left: var(--bord);
+    border-right: var(--bord);
+    background-image: url(../images/jumbotron\ bg.jpg);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 
 }
+
+.row {
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto;
+   
+}
+
 
 .cardContainer {
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    margin-bottom: 10px;
+    justify-content: center !important;
+    align-items: center !important;
     
 }
+
+.card {
+    background-color: #a3a3a3b0;
+    margin: 10px !important;
+    height: 45vh;
+    width: auto;
+    border: var(--bord);
+    color:floralwhite;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid rgb(238, 42, 238);
+    -webkit-box-shadow: 2px 1px 8px rgb(238, 42, 238);
+    ;
+}
+
 
 .card-img-top{
     height: 200px;
     width: 100%;
     display: flex;
     object-fit: cover;
+    border-bottom: 2px solid var(--shdw);
+    -webkit-box-shadow: 1px 1px 10px var(--shdw);
 }
 
-.btn {
-    margin-bottom: auto;
+.btn-border{
+    border: 2px solid rgb(238, 42, 238);
+    -webkit-box-shadow: 1px 1px 10px var(--shdw);
 }
