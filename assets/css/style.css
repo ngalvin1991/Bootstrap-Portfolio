@@ -2,7 +2,14 @@
     --bkco: #272727;
     --bord: 2px solid floralwhite;
     --shdw: rgb(238, 42, 238);
+    --secbord: rgb(108, 255, 115)
     
+}
+
+body {
+    background-color: var(--bkco);
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -63,6 +70,7 @@
     justify-content: center;
     border-left: var(--bord);
     border-right: var(--bord);
+    margin: 2px auto;
 }
 
 .jtcopy {
@@ -105,33 +113,122 @@ h1 {
     font-size: 20px;
 }
 
-/* project section cards*/
-
+/*headings*/
 .heading {
     text-align: center;
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 20px;
     margin-top: 50px;
-    font-size: 50px;
+    font-size: 70px;
     max-width: 500px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(238, 42, 238, 0.322);
     color: floralwhite;
 }
 
+/*about me section */
+.aboutContainer {
+    background-repeat: no-repeat;
+    background-image: url(../images/jumbotron\ bg.jpg);
+    background-size: cover;
+    color: floralwhite;
+    border-left: var(--bord);
+    border-right: var(--bord);
+    height: 350px;
+    margin: 5px auto;
+    justify-content: center !important;   
+    align-items: center !important;
+    align-content: center;
+    border-left: var(--bord);
+    border-right: var(--bord);
+    border: 2px solid var(--secbord);
+    -webkit-box-shadow: 2px 1px 8px var var(--secbord) !important;
+
+}
+
+.about {
+    justify-content: center !important;
+    align-items: center;
+    margin-right:100px;
+    margin-left: 100px;
+}
+
+.about-body {
+    background-color: rgba(25, 23, 126, 0.712);
+    padding: 2px;
+    margin: 5px;
+    font-size: 20px;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important ;
+    margin:2px;
+    border: 2px solid rgb(238, 42, 238);
+    -webkit-box-shadow:2px 1px 8px rgb(238, 42, 238) !important;
+}
+
+
+/* Skills Section*/
+
+.skillsContainer {
+    background-repeat: no-repeat;
+    background-image: url(../images/jumbotron\ bg.jpg);
+    background-size: cover;
+    color: floralwhite;
+    border-left: var(--bord);
+    border-right: var(--bord);
+    height: 750px;
+    margin: 5px auto;
+    justify-content: center !important;   
+    align-items: center !important;
+    align-content: center;
+    border-left: var(--bord);
+    border-right: var(--bord);
+    border: 2px solid var(--secbord);
+    -webkit-box-shadow: 2px 1px 8px var var(--secbord) !important;
+}
+
+.media {
+    justify-content: center !important;
+    align-items: center;
+ }
+
+.media-body {
+    background-color: rgba(25, 23, 126, 0.712);
+    padding: 2px;
+    margin: 5px;
+    font-size: 20px;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important ;
+    max-width: 850px;
+    margin:2px;
+    border: 2px solid rgb(238, 42, 238);
+    -webkit-box-shadow:2px 1px 8px rgb(238, 42, 238) !important;
+}
+
+
+
+.media ul {
+    list-style: none;
+    text-align: center;
+    padding: 2px
+}
+
+/* project section cards*/
+
 .container-fluid {
-    background-color: var(--bkco);
-    margin-top: auto; 
+    background-repeat: no-repeat;
+    background-image: url(../images/jumbotron\ bg.jpg);
+    background-size: cover;
+    margin: 5px auto;
     justify-content: center !important;   
     align-items: center !important;
     border-left: var(--bord);
     border-right: var(--bord);
-    background-image: url(../images/jumbotron\ bg.jpg);
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+    border: 2px solid var(--secbord);
+    -webkit-box-shadow: 2px 1px 8px var(--secbord) !important;
 
 }
 
@@ -142,15 +239,15 @@ h1 {
    
 }
 
-
 .cardContainer {
     justify-content: center !important;
     align-items: center !important;
     
 }
 
+/*added box shadow border to each card*/
 .card {
-    background-color: #a3a3a3b0;
+    background-color: rgba(25, 23, 126, 0.712);
     margin: 10px !important;
     height: 45vh;
     width: auto;
@@ -160,11 +257,11 @@ h1 {
     justify-content: center;
     text-align: center;
     border: 2px solid rgb(238, 42, 238);
-    -webkit-box-shadow: 2px 1px 8px rgb(238, 42, 238);
+    -webkit-box-shadow: 2px 1px 8px rgb(238, 42, 238) !important;
     ;
 }
 
-
+/*added box shadow border to bottom of image for a better display*/
 .card-img-top{
     height: 200px;
     width: 100%;
@@ -174,7 +271,10 @@ h1 {
     -webkit-box-shadow: 1px 1px 10px var(--shdw);
 }
 
+/*added box shadow border to buttons*/
 .btn-border{
     border: 2px solid rgb(238, 42, 238);
     -webkit-box-shadow: 1px 1px 10px var(--shdw);
 }
+
+/*contact me section*/
