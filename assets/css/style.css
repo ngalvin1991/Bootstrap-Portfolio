@@ -2,12 +2,14 @@
     --bkco: #272727;
     --bord: 2px solid floralwhite;
     --shdw: rgb(238, 42, 238);
-    --secbord: rgb(108, 255, 115)
+    --secbord: rgba(210, 121, 252, 0.822); 
     
 }
 
 body {
-    background-color: var(--bkco);
+    background-repeat: no-repeat;
+    background-image: url(../images/jumbotron\ bg.jpg);
+    background-size: cover;
     justify-content: center;
     align-items: center;
 }
@@ -61,7 +63,7 @@ body {
 /*Jumbrotron CSS*/
 
 .jumbotron {
-    background-image: url("../images/jumbotron\ bg3.jpg");
+    background-image: url("../images/jumbotron\ bg2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(50vh -15px);
@@ -130,21 +132,17 @@ h1 {
 
 /*about me section */
 .aboutContainer {
-    background-repeat: no-repeat;
-    background-image: url(../images/jumbotron\ bg.jpg);
-    background-size: cover;
     color: floralwhite;
     border-left: var(--bord);
     border-right: var(--bord);
-    height: 350px;
+    height: 300px;
     margin: 5px auto;
     justify-content: center !important;   
     align-items: center !important;
     align-content: center;
     border-left: var(--bord);
     border-right: var(--bord);
-    border: 2px solid var(--secbord);
-    -webkit-box-shadow: 2px 1px 8px var var(--secbord) !important;
+
 
 }
 
@@ -158,12 +156,11 @@ h1 {
 .about-body {
     background-color: rgba(25, 23, 126, 0.712);
     padding: 2px;
-    margin: 5px;
+    margin: 2px;
     font-size: 20px;
     justify-content: center !important;
     align-items: center !important;
     text-align: center !important ;
-    margin:2px;
     border: 2px solid rgb(238, 42, 238);
     -webkit-box-shadow:2px 1px 8px rgb(238, 42, 238) !important;
 }
@@ -172,21 +169,16 @@ h1 {
 /* Skills Section*/
 
 .skillsContainer {
-    background-repeat: no-repeat;
-    background-image: url(../images/jumbotron\ bg.jpg);
-    background-size: cover;
     color: floralwhite;
     border-left: var(--bord);
     border-right: var(--bord);
     height: 750px;
-    margin: 5px auto;
+    margin: 2px auto;
     justify-content: center !important;   
     align-items: center !important;
     align-content: center;
     border-left: var(--bord);
     border-right: var(--bord);
-    border: 2px solid var(--secbord);
-    -webkit-box-shadow: 2px 1px 8px var var(--secbord) !important;
 }
 
 .media {
@@ -219,16 +211,11 @@ h1 {
 /* project section cards*/
 
 .container-fluid {
-    background-repeat: no-repeat;
-    background-image: url(../images/jumbotron\ bg.jpg);
-    background-size: cover;
     margin: 5px auto;
     justify-content: center !important;   
     align-items: center !important;
     border-left: var(--bord);
     border-right: var(--bord);
-    border: 2px solid var(--secbord);
-    -webkit-box-shadow: 2px 1px 8px var(--secbord) !important;
 
 }
 
@@ -278,3 +265,19 @@ h1 {
 }
 
 /*contact me section*/
+.contactContainer {
+    color: floralwhite;
+    border-left: var(--bord);
+    border-right: var(--bord);
+    height: 600px;
+    margin: 5px auto;
+    justify-content: center !important;   
+    align-items: center !important;
+    align-content: center;
+    border-left: var(--bord);
+    border-right: var(--bord);    
+}
+
+
+
+/*footer*/
