@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ce4d3bda9a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../Bootstrap-Portfolio/assets/css/style.css">
 
   <title>Noel Galvin/Portfolio</title>
@@ -17,24 +18,20 @@
 
 
 <body>
+  
   <!--Navigation bar start-->
   <!--added NavBar component from Bootstrap-->
   <!--added customNav class to edit nav bar-->
   <nav class="navbar navbar-expand-lg navbar-light customNav">
     <a class="navbar-brand" href="#"><img src="../Bootstrap-Portfolio/assets/images/NavbarLogo2.png"
-        alt="portfolio logo">Noel Galvin Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        alt="portfolio logo">Noel Galvin - Web Development Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+    </button> 
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0"">
         <li class="nav-item active">
-          <a class="nav-link" href="#about-me">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#about-me-skills">About Me/Skills</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#my-work">My Work</a>
@@ -44,6 +41,7 @@
         </li>
       </ul>
     </div>
+    
   </nav>
   <!--Navigation bar end-->
 
@@ -68,57 +66,62 @@
   </header>
   <!-- End of Hero Section-->
 
-  <!-- About Me/Contact section-->
 
-  <section class="aboutContainer" id="about-me">
-    <h2 class="heading">About Me</h2>
+  <!--About Me/Skills Section-->
+  <main class="about-skillsContainer" id="about-me-skills">
+    <h2 class="heading">About Me & Skills</h2>
     <div class="divider-line"></div>
-    <div class="about">
-      <div class="about-body">
-        <div class="abouttext">
-          <p>I'm Noel a Font-End Web Developer in training from South London, UK.</p>
-          <p>I currently work
-            as a Sales Account Administrator, but I have wanted to learn how to code and develop websites for a long
-            time, so I have finally decided to take the plunge.</p>
-          <p>I am looking forward to developing myself further throughout my web development career.</p>
+    <div class="row">
+      <div class="absContainer col-lg-2 col-md-4 col-sm-7">
+        <div class="absSection">
+          <img src="../Bootstrap-Portfolio/assets/images/Profile Picture.png" alt="Noel Galvin">
+        </div>
+      </div>
+
+      <div class="absContainer col-lg-2 col-md-4 col-sm-6">
+        <div class="absSection">
+            <h5 class="abs-title">About Me </h5>
+            <p class="abs-text">I'm Noel a Font-End Web Developer in training from South London, UK.</p>
+            <p>I currently work as a Sales Account Administrator, but I have wanted to learn how to code and develop websites for a long
+              time, so I have finally decided to take the plunge.</p>
+            <p>I am looking forward to developing myself further throughout my web development career.</p>
+        </div>
+      </div>
+
+      <div class="absContainer col-lg-2 col-md-4 col-sm-6">
+        <div class="absSection">
+            <h5 class="abs-title">Skills</h5>
+              <ul class="skillList">
+              <li>HTML</li>
+              <li>Advanced CSS</li>
+              <li>Media Queries</li>
+              <li>UX Design</li>
+              <li>Bootstrap 4</li>
+              </ul>
+        </div>
+      </div>
+
+
+      <div class="absContainer col-lg-2 col-md-4 col-sm-6">
+        <div class="absSection">
+            <h5 class="abs-title">Advanced Skills</h5>
+              <ul class="skillList">
+              <li>JavaScript</li>
+              <li>Web, Third-Party & Server APIs</li>
+              <li>ES6</li>
+              <li>Node.js</li>
+              <li>Test Driven Development</li>
+              <li>React</li>
+            </ul>
         </div>
       </div>
     </div>
-  </section>
-  <!--end of about me section-->
+  </main>
+  <!--end of aboutme/skills section-->
 
-  <!--Skills Section-->
-  <section class="skillsContainer" id="skills">
-    <h2 class="heading">Skills</h2>
-    <i class="fa-solid fa-pen"></i>
-    <div class="divider-line"></div>
-    <div class="media">
-      <div class="media-body">
-        <p>My journey to becoming a fantastic Web Developer has only just begun, but I now have a better understanding
-          of the following elements:</p>
-        <ul class="skillList">
-          <li>HTML</li>
-          <li>Advanced CSS</li>
-          <li>Media Queries</li>
-          <li>UX Design</li>
-          <li>Bootstrap 4</li>
-        </ul>
-        <p>I am also looking to develop myself further and obtain a better understanding of the following elements:</p>
-        <ul class="skillList">
-          <li>JavaScript</li>
-          <li>Web, Third-Party & Server APIs</li>
-          <li>ES6</li>
-          <li>Node.js</li>
-          <li>Test Driven Development</li>
-          <li>React</li>
-        </ul>
-      </div>
-  </section>
-
-  <!--end of Skills Section-->
-
+  
   <!--Project/Work section -->
-  <section class="container-fluid work" id="my-work">
+  <section class="workContainer" id="my-work">
     <h2 class="heading">My Work</h2>
     <div class="divider-line"></div>
     <div class="row">
@@ -241,10 +244,52 @@
   <!--end of Project/Work section -->
 
   <section class="contactContainer" id="contact-me">
-    
+    <h2 class="heading">Contact Me</h2>
+    <div class="divider-line"></div>
+    <div class="row">
+      <div class="contactContainer col-lg-2 col-md-4 col-sm-7">
+        <div class="contactsection">
 
+          <i class="fa-regular fa-envelope fa-8x"></i>
+          <h5 class="cont-title">Email Me</h5>
+          <a href="mailto:noelgalvin1991@gmail.com">noelgalvin1991@gmail.com</a>
+        </div>
+        </div>
+        
+
+        <div class="contactContainer col-lg-2 col-md-4 col-sm-7">
+          <div class="contactsection">
+            <div class="cticon">
+            <i class="fa-solid fa-phone fa-7x"></i>
+          </div>
+            <h5 class="cont-title">Telephone</h5>
+            <p>+44 7969 505 611</p>
+          </div>
+            </div>
+        
+
+          <div class="contactContainer col-lg-2 col-md-4 col-sm-7">
+            <div class="contactsection">
+              <div class="cticon">
+              <i class="fa-solid fa-location-dot fa-7x"></i>
+            </div>
+              <h5 class="cont-title">Location</h5>
+              <p>London, United Kingdom</p>
+            </div>
+              </div>
+          
+          </div>
   </section>
+  <!--contact section end-->
 
+  <!--Footer-->
+  <footer class="footerContainer">
+
+    
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 
 </html>
