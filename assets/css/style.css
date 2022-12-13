@@ -4,9 +4,6 @@
     --shdw: rgb(238, 42, 238);
     --secbord: rgba(210, 121, 252, 0.822);
     --flor: floralwhite;
-
-    
-
 }
 
 body {
@@ -180,8 +177,8 @@ h1 {
     justify-content: center !important;
     text-align: center !important;
     display: block;
-    border: 2px solid rgb(238, 42, 238);
-    -webkit-box-shadow: 2px 1px 8px rgb(238, 42, 238) !important;
+    border: 2px solid var(--shdw);
+    -webkit-box-shadow: 2px 1px 8px var(--shdw) !important;
 
 }
 
@@ -194,7 +191,7 @@ h1 {
 }
 
 .abs-title {
-    -webkit-box-shadow: 2px 1px 8px rgb(238, 42, 238) !important;
+    -webkit-box-shadow: 2px 1px 8px var(--shdw) !important;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -245,8 +242,8 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 2px solid rgb(238, 42, 238);
-    -webkit-box-shadow: 2px 1px 8px rgb(238, 42, 238) !important;
+    border: 2px solid var(--shdw);
+    -webkit-box-shadow: 2px 1px 8px var(--shdw) !important;
     ;
 }
 
@@ -262,7 +259,7 @@ h1 {
 
 /*added box shadow border to buttons*/
 .btn-border {
-    border: 2px solid rgb(238, 42, 238);
+    border: 2px solid var(--shdw);
     -webkit-box-shadow: 1px 1px 10px var(--shdw);
 }
 
@@ -286,7 +283,7 @@ h1 {
     display: block;
     height: 25vh;
     margin: 0px;
-    border: 2px solid rgb(238, 42, 238);
+    border: 2px solid var(--shdw);
     -webkit-box-shadow: 1px 1px 10px var(--shdw);
 }
 
@@ -363,8 +360,10 @@ h1 {
 
 .fa {
     color: var(--flor);
+}
 
 /* media queries below will resolve small screen overlap issues*/
+
 @media (min-width: 300px) and (max-width: 1199.98px) {
 
     .about-skillsContainer {
@@ -373,8 +372,7 @@ h1 {
         height: 100%;
     }
 
-    .absContainer,
-    .absimg {
+    .absContainer, .absimg {
         margin-bottom: 10px;
         height: auto;
     }
@@ -416,4 +414,5 @@ h1 {
     .footsection {
         display: flex;
     }
+
 }
