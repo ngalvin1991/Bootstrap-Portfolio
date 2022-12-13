@@ -363,7 +363,6 @@ h1 {
 }
 
 /* media queries below will resolve small screen overlap issues*/
-
 @media (min-width: 300px) and (max-width: 1199.98px) {
 
     .about-skillsContainer {
