@@ -3,11 +3,14 @@
     --bord: 2px solid floralwhite;
     --shdw: rgb(238, 42, 238);
     --secbord: rgba(210, 121, 252, 0.822);
+    --flor: floralwhite;
+
+    
 
 }
 
 body {
-    background-color: floralwhite;
+    background-color: var(--flor);
     justify-content: center;
     align-items: center;
 
@@ -29,7 +32,7 @@ body {
 }
 
 .customNav a {
-    color: floralwhite !important;
+    color: var(--flor) !important;
     size: 100px;
 }
 
@@ -51,18 +54,18 @@ body {
 
 .nav-item a {
     box-shadow: inset 3px 0 5px 5px rgba(238, 42, 238, 0.452);
-    color: var(--shdw);
+    color: var(--flor);
     margin: 0 -.30rem;
     transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
 }
 
 .nav-item a:hover {
-    box-shadow: inset 150px 0 0 0 rgba(238, 42, 238, 0.452);
-    color: floralwhite;
+    box-shadow: inset 0px 0 0 0 rgba(238, 42, 238, 0.452);
+    color: var(--flor);
 }
 
 .navbar-toggler {
-    background-color: floralwhite;
+    background-color: var(--flor);
 
 }
 
@@ -93,7 +96,7 @@ body {
     width: 70%;
     min-width: 500px;
     max-width: 700px;
-    color: floralwhite;
+    color: var(--flor);
     text-align: center;
 }
 
@@ -105,7 +108,7 @@ body {
 }
 
 .display-picture img {
-    border: 5px solid floralwhite;
+    border: 5px solid var(--flor);
     border-radius: 10px;
 }
 
@@ -114,7 +117,7 @@ h1 {
 }
 
 .divider-line {
-    background-color: floralwhite;
+    background-color: var(--flor);
     height: 3px;
     margin: 25px;
 }
@@ -140,14 +143,14 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: floralwhite;
+    color: var(--flor);
 }
 
 /*About Me & Skills Section */
 
 .about-skillsContainer {
     background-color: black;
-    color: floralwhite;
+    color: var(--flor);
     height: 615px;
     margin: 0px auto;
     justify-content: center !important;
@@ -172,7 +175,7 @@ h1 {
     margin: 0px auto !important;
     height: 45vh;
     width: 800px;
-    color: floralwhite;
+    color: var(--flor);
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
@@ -238,7 +241,7 @@ h1 {
     height: 45vh;
     width: auto;
     border: var(--bord);
-    color: floralwhite;
+    color: var(--flor);
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -267,7 +270,7 @@ h1 {
 .contactContainer {
     background-color: black;
     height: 450px;
-    color: floralwhite;
+    color: var(--flor);
     justify-content: center;
     align-items: center;
     margin-right: 2px;
@@ -294,19 +297,19 @@ h1 {
 }
 
 .contactsection a {
-    color: white;
+    color: var(--flor);
 }
 
 .contactsection a:hover {
     box-shadow: inset 200px 0 0 0 rgba(238, 42, 238, 0.452);
-    color: white;
+    color: var(--flor);
 }
 
 /*footer*/
 .footerContainer {
     background-color: rgb(1, 1, 37);
     height: 3 50px;
-    color: floralwhite;
+    color: var(--flor);
 }
 
 .footContainer {
@@ -320,13 +323,13 @@ h1 {
 }
 
 .footsection a {
-    text: white;
+    text: var(--flor);
 
 }
 
 .footersection a:hover {
     box-shadow: inset 200px 0 0 0 rgba(238, 42, 238, 0.452);
-    color: white;
+    color: var(--flor);
 }
 
 .footersection li {
@@ -359,8 +362,7 @@ h1 {
 }
 
 .fa {
-    color: floralwhite;
-}
+    color: var(--flor);
 
 /* media queries below will resolve small screen overlap issues*/
 @media (min-width: 300px) and (max-width: 1199.98px) {
