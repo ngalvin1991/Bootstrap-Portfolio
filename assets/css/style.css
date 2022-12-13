@@ -10,7 +10,7 @@ body {
     background-color: floralwhite;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .container {
@@ -58,7 +58,19 @@ body {
 
 .nav-item a:hover {
     box-shadow: inset 150px 0 0 0 rgba(238, 42, 238, 0.452);
-    color: white;
+    color: floralwhite;
+}
+
+.navbar-toggler {
+    background-color: floralwhite;
+
+}
+
+.navbar-collapse a {
+    box-shadow: inset 500px 2px 0px 0px rgba(238, 42, 238, 0.452);
+    margin: 0 -.30rem;
+    transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+
 }
 
 /*Jumbrotron CSS*/
@@ -151,7 +163,7 @@ h1 {
     align-items: center !important;
     display: flex;
     flex-direction: row;
-    
+
 
 }
 
@@ -222,7 +234,7 @@ h1 {
 /*added box shadow border to each card*/
 .card {
     background-color: rgba(25, 23, 126, 0.712);
-    margin: 10px !important;
+    margin: 10 px !important;
     height: 45vh;
     width: auto;
     border: var(--bord);
@@ -254,11 +266,13 @@ h1 {
 /*contact me section*/
 .contactContainer {
     background-color: black;
+    height: 450px;
     color: floralwhite;
     justify-content: center;
     align-items: center;
-    margin-right: 2px ;
+    margin-right: 2px;
     margin-left: 2px;
+    margin: 0;
 }
 
 .contactsection {
@@ -273,18 +287,132 @@ h1 {
     -webkit-box-shadow: 1px 1px 10px var(--shdw);
 }
 
+
 .cticon {
-    margin:10px;
+    margin: 10px;
 
 }
 
-.contactsection a{
+.contactsection a {
     color: white;
 }
 
-.contactsection a:hover{
+.contactsection a:hover {
     box-shadow: inset 200px 0 0 0 rgba(238, 42, 238, 0.452);
     color: white;
 }
 
 /*footer*/
+.footerContainer {
+    background-color: rgb(1, 1, 37);
+    height: 3 50px;
+    color: floralwhite;
+}
+
+.footContainer {
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 2px;
+    display: flex;
+    margin: 50px auto;
+    padding: 0 auto;
+
+}
+
+.footsection a {
+    text: white;
+
+}
+
+.footersection a:hover {
+    box-shadow: inset 200px 0 0 0 rgba(238, 42, 238, 0.452);
+    color: white;
+}
+
+.footersection li {
+    text-align: center !important;
+    list-style: none;
+    justify-content: center !important;
+    align-items: center;
+    padding: 5px;
+    padding-left: 10px;
+
+}
+
+.list-inline-item {
+    display: inline-flex;
+}
+
+.footer-text {
+    font-size: 15px;
+    text-align: center;
+}
+
+.footerheader {
+    font-size: 50px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer h5 {
+    text-align: center;
+}
+
+.fa {
+    color: floralwhite;
+}
+
+/* media queries below will resolve small screen overlap issues*/
+
+@media (min-width: 300px) and (max-width: 1199.98px) {
+
+    .about-skillsContainer {
+
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .absContainer,
+    .absimg {
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .workContainer {
+        max-width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardContainer {
+        display: flex;
+    }
+
+    .card {
+        height: 100%;
+    }
+
+    .contactContainer {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contactsection {
+        display: block;
+        height: 100%;
+    }
+
+    .foottitle h5 {
+        display: flex;
+        padding-right: 80px;
+    }
+
+    .footContainer h5 {
+        margin-right: 50px;
+    }
+
+    .footsection {
+        display: flex;
+    }
+}
